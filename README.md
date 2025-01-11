@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Image and File Sharing Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This decentralized application (DApp) allows users to upload, share, and manage images or any file types securely. The application integrates blockchain technology and IPFS for distributed storage, ensuring data is secure, transparent, and accessible.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Features
+- Upload and share images or other file types with secure and decentralized storage.
+- Blockchain technology for immutable and transparent file management.
+- Distributed storage system powered by **IPFS**.
+- Integrated with MetaMask for blockchain network interaction.
+- Modern user interface built with React and Tailwind CSS.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
+To build and run the application, you will need:
+1. **Node.js**: For package management and development server.
+2. **Truffle Suite**: For smart contract development, testing, and deployment.
+3. **Ganache**: Simulate a local blockchain network for development.
+4. **MetaMask**: Digital wallet for blockchain interactions.
+5. **IPFS**: For distributed file storage. Install and configure a Kubo RPC node.
+6. **React**: Framework for building the web application.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## How to Build and Run
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 1. Setup Environment
+1. **Blockchain Configuration**:
+   - Install **Truffle Suite** and **Ganache**:
+     - Truffle Suite: [Truffle Documentation](https://trufflesuite.com/docs/)
+     - Ganache: [Ganache Documentation](https://trufflesuite.com/ganache/)
+   - Clone the repository and navigate to the `contracts/` folder.
+   - Follow the instructions in the `contracts/README.md` to set up and deploy migrations for the Solidity smart contracts.
 
-### `npm run build`
+2. **IPFS Configuration**:
+   - Install and set up an IPFS Kubo node: [Kubo Installation Guide](https://docs.ipfs.tech/install/).
+   - Configure the Kubo node with an RPC API endpoint.
+   - Ensure the RPC endpoint is accessible to the application by enabling necessary CORS policies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. **MetaMask Setup**:
+   - Install the **MetaMask** browser extension: [MetaMask Download](https://metamask.io/download.html).
+   - Connect MetaMask to your local blockchain network simulated by Ganache.
+   - Import the account private key from Ganache into MetaMask to enable blockchain interaction.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. Start the Web Application
+1. Navigate to the project’s root directory.
+2. Install dependencies:
+   ```bash
+   npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Demo
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Demo](/public/Demo.mp4)
